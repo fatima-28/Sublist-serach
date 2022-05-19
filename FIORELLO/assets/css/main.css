@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 150px;
+}
+
+.logo img {
+  width: 220px;
+  margin-left: 80px;
+  margin-top: 60px;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.categories div {
+  margin-right: 70px;
+  margin-top: 60px;
+}
+
+.categories div i {
+  margin-left: 20px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bag {
+  margin-right: 7px;
+  margin-top: 3px;
+}
+
+.glass {
+  margin-top: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  margin-bottom: 7px;
+}
+
+.dropdown {
+  display: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.home:hover div {
+  display: block;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.underline:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 30%;
+  position: absolute;
+  background: black;
+  -webkit-transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+
+.underline:hover::after {
+  width: 100%;
+  left: 0;
+}

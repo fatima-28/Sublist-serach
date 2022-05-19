@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.logo {
+    img {
+        width: 220px;
+        margin-left: 80px;
+        margin-top: 60px;
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+        margin-right: 70px;
+        margin-top: 60px;
+
+
+        i {
+            margin-left: 20px;
+        }
+    }
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bag {
+    margin-right: 7px;
+    margin-top: 3px;
+}
+
+.glass {
+    margin-top: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    a {
+        margin-bottom: 7px;
+    }
+}
+
+.dropdown {
+    display: none;
+    transition: 2s;
+}
+
+.home:hover {
+    div {
+        display: block;
+    }
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+
+.underline:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 30%;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    transition: width 0.3s ease 0s, right 0.3s ease 0s;
+    width: 0;
+}
+
+.underline:hover::after {
+    width: 100%;
+    left: 0;
+}
